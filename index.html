@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes"><!--meta标签是iphone设备中的safari私有meta标签，它表示：允许全屏模式浏览；-->
+    <meta name="format-detection" content="telephone=yes"><!--meta标签表示：告诉设备忽略将页面中的数字识别为电话号码。-->
+    <title>淘公司</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="js/3.X/jquery-3.1.0.min.js"></script>
+    <script src="js/index.js"></script>
+
+</head>
+<body>
+    <div class="nav-body">
+        <div class="nav-inner">
+            <div class="nav-inner-title clearfix">
+                <h2><a href="#">淘首页</a></h2>
+                <img class="nav-inner-close" src="images/close.png" alt="关闭">
+            </div>
+            <ul>
+                <li><a href="#">我的购买</a></li>
+                <li><a href="#">我的发布</a></li>
+                <li><a href="#">我的销售</a></li>
+                <li><a href="#">密码修改</a></li>
+                <li><a href="#">常见问题</a></li>
+                <li><a href="#">用户协议</a></li>
+            </ul>
+            
+        </div>
+    </div>
+    <div class="inner">
+        <!--头部-->
+        <header>
+            <div class="nav"></div>
+            <div class="logo">
+                <h1>
+                    <a href="#">
+                        <img src="images/logo.png" alt="布政使云平台">
+                    </a>
+                </h1>
+            </div>
+            <div class="phone">
+                <a href="tel:4000852152">400-085-2152</a>
+                <div class="nav-title-right">
+                    <span>
+                        <a class="login" href="#">登陆</a>
+                    </span>
+                </div>
+            </div>
+        </header>
+        <!--内容区-->
+        <div class="section clearfix">
+            <!--轮播区+查询-->
+            <div class="section_pc">
+                <!--****************************************************************轮播部分-->
+                <div class="section-top section-top-pc"><!--pc端轮播图部分-->
+                    <div class="banner">
+                        <div class="cons"><!--小圆点-->
+                            <ul class="num" id="num">
+                                <li class="act"></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="box" id="box"><!--图片-->
+                            <div class="box_banner">
+                                <img src="./images/new/01.jpg" alt="">
+                                <span class="box_span"></span>
+                            </div>
+                            <div class="box_banner">
+                                <img src="./images/new/02.jpg" alt="">
+                                <span class="box_span"></span>
+                            </div>
+                            <div class="box_banner">
+                                <img src="./images/new/03.jpg" alt="">
+                                <span class="box_span"></span>
+                            </div>
+                            <div class="box_banner">
+                                <img src="./images/new/04.jpg" alt="">
+                                <span class="box_span"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--手机端显示的-->
+                <div class="section-top section-top-mobile">
+                    <div class="banner">
+                        <img src="images/new/02.jpg" alt="">
+                    </div>
+                    <div class="banner_right">
+                        <a href="#">
+                            <img src="images/new/zhuanrang.png" alt="我要转让">
+                        </a>
+                    </div>
+                </div>
+                <!--//**************************************************************查询条件部分*-->
+                <div class="search clearfix">
+                    <div class="search-inner clearfix">
+                        <div class="search-row clearfix">
+                            <!--<div class="search-row01">-->
+                                <!--<span>行政区划：</span>-->
+                                <!--<select name="" >-->
+                                    <!--<option value="">上海</option>-->
+                                    <!--<option value="">北京</option>-->
+                                <!--</select>-->
+                                <!--<select name="" >-->
+                                    <!--<option value="">请选择</option>-->
+                                    <!--<option value="">水水</option>-->
+                                <!--</select>-->
+                            <!--</div>-->
+                            <div class="search-row01 search-row02">
+                                <span>行政区划：</span>
+                                <select name="" >
+                                    <option value="">总局</option>
+                                    <option value="">上海</option>
+                                    <option value="">北京</option>
+                                    <option value="">天津</option>
+                                    <option value="">重庆</option>
+                                    <option value="">河北</option>
+                                    <option value="">山西</option>
+                                    <option value="">内蒙古</option>
+                                    <option value="">辽宁</option>
+                                    <option value="">吉林</option>
+                                    <option value="">黑龙江</option>
+                                    <option value="">江苏</option>
+                                    <option value="">安徽</option>
+                                    <option value="">福建</option>
+                                    <option value="">江西</option>
+                                    <option value="">山东</option>
+                                </select>
+                            </div>
+                            <div class="search-row01 search-row02">
+                                <span>行业：</span>
+                                <select name="" >
+                                    <option value="">请选择</option>
+                                    <option value="">金融投资</option>
+                                    <option value="">教育培训</option>
+                                    <option value="">电商贸易</option>
+                                    <option value="">广告传媒</option>
+                                    <option value="">物业地产</option>
+                                    <option value="">保理经济</option>
+                                    <option value="">实业生产</option>
+                                    <option value="">装饰建材</option>
+                                    <option value="">网络通讯</option>
+                                    <option value="">科技信息</option>
+                                    <option value="">融资租赁</option>
+                                    <option value="">劳务人资</option>
+                                    <option value="">食品餐饮</option>
+                                    <option value="">商务咨询</option>
+                                    <option value="">其他</option>
+                                </select>
+                            </div>
+                            <div class="search-row01 search-row02 showToggle">
+                                <span id="showToggle">更多筛选条件</span>
+                            </div>
+                        </div>
+                        <div class="search-row clearfix" id="search-row">
+                            <div class="search-row01 search-row02">
+                                <span>成立年限 </span>
+                                <select name="" >
+                                    <option value="">不限</option>
+                                    <option value="">1年以内</option>
+                                    <option value="">1-3年</option>
+                                    <option value="">3-5年</option>
+                                    <option value="">5-10年</option>
+                                    <option value="">10-20年</option>
+                                    <option value="">20年以上</option>
+                                </select>
+                            </div>
+                            <div class="search-row01 search-row02">
+                                <span>纳税类型 </span>
+                                <select name="" >
+                                    <option value="">所有</option>
+                                    <option value="">小规模</option>
+                                    <option value="">一般纳税人</option>
+                                    <option value="">未核税</option>
+                                </select>
+                            </div>
+                            <div class="search-row01 search-row02">
+                                <span>注册资金 </span>
+                                <select name="" >
+                                    <option value="">不限</option>
+                                    <option value="">50万以内</option>
+                                    <option value="">50-100万</option>
+                                    <option value="">100-500万</option>
+                                    <option value="">500-1000万</option>
+                                    <option value="">1000-5000万</option>
+                                    <option value="">5000万以上</option>
+                                </select>
+                            </div>
+                            <div class="search-row01 search-row02">
+                                <span>年纳税额 </span>
+                                <select name="" >
+                                    <option value="">不限</option>
+                                    <option value="">小规模</option>
+                                </select>
+                            </div>
+                            <div class="search-row01 search-row02">
+                                <span>银行流水 </span>
+                                <select name="" >
+                                    <option value="">不限</option>
+                                    <option value="">未开户</option>
+                                    <option value="">500万以内</option>
+                                    <option value="">500-1000万</option>
+                                    <option value="">1000-2000万</option>
+                                    <option value="">2000-5000万</option>
+                                    <option value="">5000-1亿</option>
+                                    <option value="">1亿以上</option>
+                                </select>
+                            </div>
+                            <div class="search-row01 search-row02">
+                                <span>企业类型 </span>
+                                <select name="" >
+                                    <option value="">所有</option>
+                                    <option value="">有限公司</option>
+                                    <option value="">合伙企业</option>
+                                    <option value="">独资企业</option>
+                                    <option value="">个体户</option>
+                                    <option value="">股份公司</option>
+                                    <option value="">外商独资</option>
+                                    <option value="">中外合资</option>
+                                    <option value="">港澳台独资</option>
+                                    <option value="">中港澳台独资</option>
+                                    <option value="">其他</option>
+                                </select>
+                            </div>
+                            <div class="search-row01 search-row02">
+                                <span>价格 </span>
+                                <select name="" >
+                                    <option value="">所有</option>
+                                    <option value="">1万以内</option>
+                                    <option value="">1-5万</option>
+                                    <option value="">5-10万</option>
+                                    <option value="">10-20万</option>
+                                    <option value="">20-50万</option>
+                                    <option value="">50-100万</option>
+                                    <option value="">100万以上</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="search-button">查询</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="wrapper">
+                <div id="scroller">
+                    <ul id="thelist" class="search-content">
+                        <!--<li>-->
+                            <!--<div class="search_content_campany_name">上海投资管理公司</div>-->
+                            <!--<div class="search_content_campany_details">-->
+                                <!--<span>行业类别:金融投资</span>-->
+                                <!--<span>注册地区:浦东</span>-->
+                                <!--<span>注册日期:2013-10-29</span>-->
+                                <!--<span>注册资金:万</span>-->
+                                <!--<span class="campany_details_price">转让价: <span>￥3.2万元</span></span>-->
+                            <!--</div>-->
+                        <!--</li>-->
+
+                    </ul>
+                </div>
+            </div>
+
+            <div style="margin-top:90px"></div>
+
+            <!--页码-->
+            <div id="page">
+                <div class="pageTest clearfix"></div>
+                <!--<script type="text/javascript" src="jquery.js"></script>-->
+                <script type="text/javascript" src="js/page.js"></script>
+
+            </div>
+        </div>
+        <!--底部-->
+        <footer>
+            <p>© 2016 taogs.net All rights reserved. 沪ICP备16014845号-2</p>
+        </footer>
+    </div>
+</body>
+</html>

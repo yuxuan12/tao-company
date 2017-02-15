@@ -1,0 +1,651 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 12px;
+  font-weight: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 12px;
+  font-weight: normal;
+}
+ul {
+  list-style: none;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+input,
+img {
+  border: none;
+  outline: none;
+}
+textarea {
+  resize: none;
+}
+a:focus {
+  outline: none;
+  -moz-outline: none;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+* {
+  font-family: "微软雅黑";
+}
+body {
+  background: #f4f4f4;
+}
+/*声明变量@变量名称*/
+/*1rem=55px*/
+.nav-body {
+  width: 36%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  z-index: 1000;
+  left: -36%;
+}
+.nav-body .nav-inner {
+  margin-left: 50%;
+}
+.nav-body .nav-inner a {
+  color: #fff;
+  cursor: pointer;
+}
+.nav-body .nav-inner a:hover {
+  text-decoration: underline;
+}
+.nav-body .nav-inner .nav-inner-title h2 {
+  float: left;
+  width: 80px;
+  line-height: 80px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.nav-body .nav-inner .nav-inner-title img {
+  float: left;
+  position: absolute;
+  margin-top: 25px;
+  left: 75%;
+  cursor: pointer;
+}
+.nav-body .nav-inner ul li {
+  line-height: 60px;
+  font-size: 18px;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 82%;
+  background: #fff;
+  z-index: 100;
+}
+header .nav {
+  width: 8%;
+  display: inline-block;
+  min-width: 80px;
+  height: 100%;
+  background: url("images/nav.png") no-repeat center;
+  cursor: pointer;
+  vertical-align: middle;
+}
+header .logo {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  width: 100px;
+}
+header .logo img {
+  width: 130%;
+}
+header .phone {
+  float: right;
+  text-align: right;
+  margin-right: 40px;
+}
+header .phone > a {
+  font-size: 24px;
+  color: #26aaf2;
+  background: url(images/phone.png) no-repeat left center;
+  padding-left: 30px;
+  line-height: 80px;
+}
+header .phone > a:hover {
+  text-decoration: underline;
+}
+header .phone .nav-title-right {
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+  margin: 0 10px;
+}
+header .phone .nav-title-right span {
+  display: inline-block;
+  padding-left: 33px;
+  line-height: 78px;
+  cursor: pointer;
+  background: url(images/user.png) no-repeat left center;
+  background-size: 27px;
+}
+header .phone .nav-title-right .login {
+  font-size: 16px;
+  vertical-align: middle;
+}
+.section {
+  width: 100%;
+  min-height: 254px;
+}
+.section .section-top {
+  position: relative;
+}
+.section .section-top-pc {
+  display: block;
+}
+.section #box {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+.section #box .box_banner:nth-child(1) {
+  width: 600px;
+  height: 200px;
+  z-index: 3;
+  top: -10px;
+  left: 300px;
+}
+.section #box .box_banner {
+  width: 530px;
+  position: absolute;
+  left: -530px;
+  top: 10px;
+  z-index: 2;
+  height: 180px;
+}
+.section #box .box_banner img {
+  width: 100%;
+}
+.section #box .box_span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.section .cons {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  border: 0;
+  margin-left: -49px;
+  z-index: 4;
+}
+.section .cons .num {
+  height: 18px;
+}
+.section .cons .num li {
+  float: left;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px #58A1FA solid;
+  background: #ecf5fc;
+  cursor: pointer;
+  margin: 0 2px;
+}
+.section .cons .num .act {
+  background: #fe6c06;
+}
+.section .section-top-mobile {
+  display: none;
+  width: 100%;
+}
+.section .section-top-mobile .banner img {
+  width: 100%;
+}
+.section .search {
+  border-radius: 8px;
+  margin: 20px 0 40px;
+  border: 1px solid #a5a5a5;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-shadow: 0px 2px 20px #cccccc;
+  -webkit-box-shadow: 0px 2px 20px #cccccc;
+  box-shadow: 0px 2px 20px #cccccc;
+}
+.section .search .search-inner {
+  padding: 2% 5%;
+  background: #fff;
+  border-radius: 6px;
+  border-bottom: 4px solid #e2e5e9;
+}
+.section .search .search-row01 {
+  float: left;
+  width: 38.5%;
+  margin-bottom: 10px;
+}
+.section .search .search-row01 span {
+  line-height: 50px;
+  font-size: 20px;
+  width: 100px;
+  float: left;
+  color: #555555;
+  text-align: right;
+}
+.section .search .search-row01 select {
+  height: 50px;
+  font-size: 20px;
+  padding-left: 18px;
+  width: 34.5%;
+  color: #878787;
+  border: 2px solid #e3e4e8;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url(images/arrow.png) no-repeat scroll right center transparent;
+  padding-right: 14px;
+  background-color: #ffffff;
+  background-size: 27px;
+}
+.section .search .search-row02 select {
+  width: 70%;
+}
+.section .search .showToggle {
+  width: 23%;
+}
+.section .search .showToggle span {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 72%;
+  height: 50px;
+  line-height: 50px;
+  border: 2px solid #e3e4e8;
+  text-align: center;
+  border-radius: 5px;
+  color: #26aaf2;
+  cursor: pointer;
+}
+.section .search #search-row span {
+  box-sizing: border-box;
+  padding-right: 10px;
+}
+.section .search .search-button {
+  width: 20%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  border-radius: 5px;
+  border: 0;
+  color: #ffffff;
+  box-shadow: 0px 0px 4px 4px #5aabe0 inset;
+  background: -webkit-linear-gradient(top, #489cd3, #3980af);
+  text-align: center;
+  margin-top: 10px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.section .search .search-button:hover {
+  background: #5aabe0;
+}
+#wrapper {
+  margin-top: -22px;
+}
+.search-content {
+  border-top: 2px solid #0190d4;
+  margin-bottom: 56px;
+  -moz-box-shadow: 0px 2px 20px #cccccc;
+  -webkit-box-shadow: 0px 2px 20px #cccccc;
+  box-shadow: 0px 2px 20px #cccccc;
+}
+.search-content li:nth-child(2n) {
+  background: #f3f3f5;
+}
+.search-content li {
+  background: #fff;
+  padding: 40px 5% 0;
+  height: 110px;
+  cursor: pointer;
+}
+.search-content li .search_content_campany_name {
+  font-size: 24px;
+  color: #555555;
+  line-height: 40px;
+}
+.search-content li .search_content_campany_details {
+  font-size: 18px;
+  color: #878787;
+  line-height: 32px;
+}
+.search-content li .search_content_campany_details span {
+  padding-right: 40px;
+}
+.search-content li .search_content_campany_details .campany_details_price {
+  float: right;
+  padding-right: 10%;
+}
+.search-content li .search_content_campany_details .campany_details_price > span {
+  color: #ff5e2d;
+  font-size: 24px;
+}
+.search-content li:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+#page {
+  height: 48px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  text-align: center;
+  color: #7da9ce;
+  position: relative;
+}
+#page .pageTest {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#page .activP {
+  background-color: #367fa9!important;
+  color: #fff!important;
+}
+#page .pagingUl {
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#page .pagingUl li {
+  float: left;
+  width: 46px;
+  height: 46px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+#page .pagingUl li a {
+  text-decoration: none;
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  text-align: center;
+  line-height: 46px;
+  padding: 0;
+  color: #7da9ce;
+  font-size: 18px;
+}
+#page .prv,
+#page .next {
+  width: 46px;
+  height: 46px;
+  float: left;
+  text-align: center;
+  line-height: 46px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+#page .first,
+#page .last {
+  width: 46px;
+  height: 46px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 46px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+footer {
+  width: 100%;
+  background: #000;
+  height: 80px;
+  color: #fff;
+  text-align: center;
+}
+.inner {
+  position: relative;
+  width: 82%;
+  height: 100%;
+  top: 0;
+  left: 9.1%;
+}
+@media only screen and (max-width: 1440px) {
+  header {
+    height: 80px;
+  }
+  header .logo img {
+    width: 110%;
+  }
+  .section {
+    margin-top: 80px;
+  }
+  footer {
+    font-size: 16px;
+    line-height: 80px;
+  }
+  .search {
+    border-radius: 6px;
+    margin: 12px 0;
+  }
+  .search-content li {
+    padding: 32px 5% 0;
+    height: 88px;
+    cursor: pointer;
+  }
+  .search-content li .search_content_campany_name {
+    font-size: 20px;
+    line-height: 32px;
+    color: #555555;
+  }
+  .search-content li .search_content_campany_details {
+    font-size: 16px;
+    line-height: 26px;
+    color: #878787;
+  }
+  .search-content li .search_content_campany_details span {
+    padding-right: 32px;
+  }
+  .search-content li .search_content_campany_details .campany_details_price {
+    float: right;
+    padding-right: 2%;
+  }
+  .search-content li .search_content_campany_details .campany_details_price > span {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .inner {
+    width: 94%;
+    left: 3%;
+  }
+  header {
+    width: 94%;
+    height: 74px;
+  }
+  .section {
+    margin-top: 74px;
+  }
+  #page {
+    height: 48px;
+    margin-bottom: 40px;
+    font-size: 12px;
+  }
+  #page .pagingUl li {
+    width: 30px;
+    height: 30px;
+  }
+  #page .pagingUl li a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+  }
+  #page .prv,
+  #page .next {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+  #page .first,
+  #page .last {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 30px;
+  }
+  footer {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .inner {
+    width: 100%;
+    left: 0;
+  }
+  header {
+    width: 100%;
+    height: 40px;
+  }
+  header .nav {
+    min-width: 40px;
+    background-size: 50%;
+  }
+  header .logo img {
+    width: 64%;
+    padding-top: 5px;
+  }
+  header .phone {
+    margin-right: 0;
+  }
+  header .phone > a {
+    line-height: 40px;
+    height: 40px;
+    font-size: 12px;
+    background-size: 20%;
+    display: inline-block;
+  }
+  header .phone .nav-title-right {
+    margin-right: 8px;
+    font-size: 16px;
+  }
+  header .phone .nav-title-right span {
+    padding-left: 25px;
+    line-height: 40px;
+    background-size: 40%;
+  }
+  header .phone .nav-title-right .login {
+    font-size: 12px;
+  }
+  .section {
+    margin: 40px 0;
+  }
+  .section .section-top-pc {
+    display: none;
+  }
+  .section .section-top-mobile {
+    display: block;
+    position: relative;
+  }
+  .section .section-top-mobile .banner_right {
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+    margin-top: -30px;
+    background: rgba(26, 63, 105, 0.8);
+    position: absolute;
+    top: 50%;
+    right: 6%;
+  }
+  .section .section-top-mobile .banner_right a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .section .section-top-mobile .banner_right a img {
+    width: 100%;
+  }
+  .section .search {
+    height: auto;
+    margin: 16px 3%;
+    width: 94%;
+  }
+  .section .search-content li {
+    padding: 16px 3%;
+    height: 60px;
+    position: relative;
+  }
+  .section .search-content li .search_content_campany_name {
+    font-size: 14px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 14em;
+    border: 0px #ff8000 dashed;
+  }
+  .section .search-content li .search_content_campany_details {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .section .search-content li .search_content_campany_details span {
+    padding-right: 0;
+    width: 44%;
+    display: inline-block;
+  }
+  .section .search-content li .search_content_campany_details .campany_details_price {
+    position: absolute;
+    right: -110px;
+    top: 15px;
+  }
+  .section .search-content li .search_content_campany_details .campany_details_price > span {
+    font-size: 14px;
+  }
+  footer {
+    height: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .nav-body {
+    width: 80%;
+    left: -80%;
+  }
+  .nav-body .nav-inner {
+    margin-left: 20%;
+  }
+  .nav-body .nav-inner .nav-inner-title h2 {
+    font-size: 18px;
+  }
+  .nav-body .nav-inner .nav-inner-title h2 ul li {
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
